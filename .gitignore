@@ -8,3 +8,6 @@ Thumbs.db
 # Release packages
 *.zip
 .release/
+
+# Built zips (tools/package.sh)
+dist/
