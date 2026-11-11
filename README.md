@@ -25,3 +25,9 @@ QuestieDB's NPC name index (a few MB) is only built while the Quests or Objectiv
 
 Nothing runs while the labels and alerts are both off. While on, a scan reads the minimap in
 slices of at most 1 ms a frame.
+
+## Releasing
+
+Bump `## Version:` in `MinimapLabels.toc`, commit, then push a matching tag (`v<version>`). The
+`Release` workflow builds the zip with `tools/package.sh` and publishes a GitHub release, which the
+[WowUp Hub](https://wowup.io/guide/wowup/hub) picks up.
